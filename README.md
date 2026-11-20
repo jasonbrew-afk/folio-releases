@@ -1,32 +1,23 @@
 # folio
 
-**Your work. In motion.**
+**Work in Motion**
 
-folio is a native macOS app to save and present your work.
+folio is a native macOS home for shared design work. This repository holds released Mac builds only; application source is private.
 
-This repository holds **released builds only**. folio's source code is not published here.
-
-## Install
+## Download and install
 
 1. Open [the latest release](https://github.com/jasonbrew-afk/folio-releases/releases/latest).
-2. Download `Fero-fero-r<number>.zip` (the file name keeps folio's original build name).
-3. Open the ZIP and drag **folio.app** into your Applications folder, then open it.
+2. Download the `folio-<version>-arm64.dmg` disk image.
+3. Open it and drag **folio.app** into Applications.
 
-folio needs macOS 13 or later.
+Requires **macOS 26 or later on Apple silicon**. The ZIP remains available for existing in-app updaters. Each release includes SHA-256 checksum files.
 
-To check the download, compare its SHA-256 with the `.sha256` file beside it:
+Bookmark the latest-release link above. A link containing `/releases/tag/fero-r<number>` always opens that historical build.
 
-```bash
-shasum -a 256 -c Fero-fero-r<number>.zip.sha256
-```
+## Verified downloads
 
-## Signed and notarized
-
-Every build here is signed with an Apple Developer ID, built with the hardened runtime, notarized
-by Apple and stapled, so macOS opens it without any security override. If macOS ever says folio
-can't be checked or is damaged, don't bypass it: delete the copy and download it again from this page.
+Public packages are Developer ID signed, built with the hardened runtime, notarized by Apple and stapled. Publication verifies their contents, signatures and checksums, then checks fresh downloads without a GitHub account. New packages include the neutral Agent / Audit / Review template.
 
 ## Updates
 
-folio checks this page for newer builds and offers them in the app (folio ▸ Check for Updates…).
-No GitHub account or token is needed.
+folio checks for newer packaged releases and offers **Install & Relaunch**. Installing is your choice. No GitHub account or token is required for this public channel.
